@@ -12,7 +12,7 @@ From the Git homepage:
 
 _Version control systems_ (VCSs) are tools that track how files change over time, making it easy to roll back to previous versions of files. VCSs also usually offer the ability to split histories into parallel timelines (called _branches_ in Git) and to merge timelines together into single, unified timelines. This ability to split and merge timelines is also what makes it possible for multiple parties to collaborate on projects.
 
-A Git project, usually called a _repository_, is just a folder in which Git has created a `.git` subdirectory for storing the history of the project files. Git repositories can be managed either at the command line (using the `git` command) or in [GUI applications](https://git-scm.com/downloads/guis).
+A Git project, usually called a _repository_, is just a folder in which Git has created a `.git` subdirectory for storing the history of the project files. Git repositories can be managed either at the command line (using the `git` command) or in [GUI applications](https://git-scm.com/downloads/guis). The history Git creates is made of snapshots in time called _commits_, and commits usually only include the files that changed since the last commit (i.e., not the entire repository at each moment in time).
 
 ## What is GitHub?
 
@@ -48,7 +48,96 @@ Git is used extensively by software developers because it excels at tracking cha
 
 Follow the instructions on [the Git downloads page](https://git-scm.com/downloads) to install either the command line tool or a GUI application.
 
-# Usage
+# Cheat sheet
+
+```bash
+# Get help
+git --help
+git [command] --help
+
+# Set the default branch name for all new repositories to be "main"
+git config --global init.defaultBranch main
+
+# Set your username and email address to be used by default in all repositories
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+# Create a new repository
+git init
+
+# Clone an existing repository from a remote location
+# Using SSH:
+git clone git@github.com:username/repo-name
+# Using HTTPS:
+git clone https://github.com/username/repo-name
+
+# Add files to be committed
+git add path/to/file1
+git add path/to/file2
+git add path/to/some/directory
+# etc.
+
+# Commit the added files
+git commit -m "A helpful message."
+
+# Add a remote location called "origin"
+# (For new repositories. Cloned repositories will already have this.)
+# Using SSH:
+git remote add origin git@github.com:username/repo-name
+# Using HTTPS:
+git remote add origin https://github.com/username/repo-name
+
+# Push to "origin"
+# (Assumes that the default branch name is "main")
+git push origin main
+
+# Pull from "origin"
+# (Assumes that the default branch name is "main")
+git pull origin main
+
+# Create a new branch called "my-cool-branch"
+git checkout -b my-cool-branch
+
+# Push branch "my-cool-branch" to "origin"
+git push origin my-cool-branch
+
+# Pull branch "my-cool-branch" from "origin"
+git pull origin my-cool-branch
+
+# Merge the history of branch "my-cool-branch" into branch "main"
+git checkout main
+git merge my-cool-branch
+
+# Switch back to branch "my-cool-branch"
+git checkout my-cool-branch
+
+# List the commits in the history
+git log
+
+# Roll back in time to a particular commit (using an ID number from `git log`)
+git checkout e80d40517a8f5dbec084da080026c9af538d5b41
+
+# Roll forward in time to the most recent commit
+# (Assuming you're on branch "my-cool-branch")
+git checkout my-cool-branch
+
+# Stash any uncommitted changes
+git stash -u
+
+# List sets of stashed changes
+git stash list
+
+# Unstash the most recent set of stashed changes
+git stash pop
+
+# Or delete all sets of stashed changes
+git stash clear
+
+# Rename a branch
+git branch -m my-cool-branch something-else
+```
+
+# Tutorial
 
 To be honest, I've never used any of the GUI applications; so all of the instructions that follow will use the command line tool. However, the concepts described here should be available in GUI applications as well.
 
@@ -87,4 +176,43 @@ cd path/to/some/directory-with-files
 # Turn it into a repository
 git init
 ```
+
+## Append to the repository history
+
+Appending snapshots to a repository's history is a two-step process:
+
+1. You _add_ (or _stage_) files to be included in the snapshot.
+2. You _commit_ the snapshot to the history.
+
+So, for example:
+
+```bash
+# Add the files to be included in the snapshot
+git add path/to/my-changed-file
+git add path/to/another-changed-file
+
+# Commit the snapshot to the history and include a message about what changes
+# this snapshot represents
+git commit -m "I changed x, y, and z."
+```
+
+Note that commits _must_ include a message, though these messages can be long or short, verbose or terse, clear or opaque, etc. The important thing to consider, though, is that you may someday find yourself looking back through the history of your files, and that's not a great time to discover that your past self really failed to make clear what each commit's purpose was.
+
+If you run `git commit` without the `-m "[MESSAGE]"` part, Git will automatically open a text editor (usually a command line text editor, like Nano or Vim) so that you can write a commit message. It's useful to do this if you intend to write a long commit message explaining in great detail what the commit does. But most of the time, I prefer to use the `-m` flag and write relatively short messages.
+
+## Checking the repository status
+
+At any time, you can see the status of the repository:
+
+```bash
+git status
+```
+
+This usually shows:
+
+- what branch you're working on
+- what files have been changed
+- what files are staged (i.e., added) to be included in the next commit (i.e., snapshot)
+
+## Pushing a repository history to a central location
 
