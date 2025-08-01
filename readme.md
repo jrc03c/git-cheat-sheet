@@ -32,7 +32,7 @@ Git's functionality is in no way tied to these services. You can use Git entirel
 
 <blockquote>
   <div id="note-1">
-    (1) "If you're not paying, you're the product." For that reason, I've moved most of my personal repositories to <a href="https://sourcehut.org/">Sourcehut</a> and only use GitHub for work.
+    <sup>1</sup> "If you're not paying, you're the product." For that reason, I've moved most of my personal repositories to <a href="https://sourcehut.org/">Sourcehut</a> and only use GitHub for work.
   </div>
 </blockquote>
 
