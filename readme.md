@@ -275,7 +275,7 @@ Note that commits _must_ include a message, though these messages can be long or
 
 If you run `git commit` without the `-m "[MESSAGE]"` part, Git will automatically open a text editor (usually a command line text editor, like Nano or Vim) so that you can write a commit message. It's useful to do this if you intend to write a long commit message explaining in great detail what the commit does. But most of the time, I prefer to use the `-m` flag and write relatively short messages.
 
-## Checking the repository status
+## Check the repository status
 
 At any time, you can see the status of the repository:
 
@@ -289,5 +289,6 @@ This usually shows:
 - what files have been changed
 - what files are staged (i.e., added) to be included in the next commit (i.e., snapshot)
 
-## Pushing a repository history to a central location
+## Push a repository history to a central location
 
+...
