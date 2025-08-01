@@ -256,7 +256,7 @@ git init
 
 Appending snapshots to a repository's history is a two-step process:
 
-1. You _add_ (or _stage_) files to be included in the snapshot.
+1. You _add_ files to be included in the snapshot.
 2. You _commit_ the snapshot to the history.
 
 So, for example:
