@@ -16,9 +16,9 @@ A Git project, usually called a _repository_, is just a folder in which Git has 
 
 ## What is GitHub?
 
-[GitHub](https://github.com) — and competitors like [GitLab](https://gitlab.com), [BitBucket](https://bitbucket.org/), [Sourcehut](https://sourcehut.org/), [Codeberg](https://codeberg.org/), and [Gitea](https://gitea.com/), to name just a few — are services that host Git repositories.
+[GitHub](https://github.com) — and similar companies and tools like [GitLab](https://gitlab.com), [BitBucket](https://bitbucket.org/), [Sourcehut](https://sourcehut.org/), [Codeberg](https://codeberg.org/), and [Gitea](https://gitea.com/), to name just a few — are services that host Git repositories.
 
-Git's functionality is in no way tied to these services. You can use Git entirely offline on your computer, or you can put repositories in private locations that only you and other collaborators can access, or you can zip repositories up and email them back and forth between collaborators. The appeal of services like GitHub is that they usually offer a fairly generous free tier<sup><a href="#note-1">1</a></sup> that includes features like:
+Git's functionality is in no way tied to any of these services. You can use Git entirely offline on your computer, or you can put repositories in private locations that only you and other collaborators can access, or you can zip repositories up and email them back and forth between collaborators. The appeal of services like GitHub is that they usually offer a fairly generous free tier<sup><a href="#note-1">1</a></sup> that includes features like:
 
 - a web-based interface
 - knowledgebases
