@@ -2,6 +2,46 @@
 
 Welcome! This is a little tutorial and cheat sheet for using [Git](https://git-scm.com/).
 
+# Contents
+
+<ul>
+<li><a href="#intro">Intro</a></li>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#faq">FAQ</a>
+<ul>
+<li><a href="#what-is-git">What is Git?</a></li>
+<li><a href="#what-problem-s-does-git-solve">What problem(s) does Git solve?</a>
+<ul>
+<li><a href="#1-file-version-histories">1. File version histories</a></li>
+<li><a href="#2-asynchronous-collaboration">2. Asynchronous collaboration</a></li>
+</ul>
+</li>
+<li><a href="#what-is-github">What is GitHub?</a></li>
+<li><a href="#who-should-use-git">Who should use Git?</a></li>
+<li><a href="#what-should-i-use-git-for">What should I use Git for?</a></li>
+</ul>
+</li>
+<li><a href="#cheat-sheet">Cheat sheet</a></li>
+<li><a href="#tutorial">Tutorial</a>
+<ul>
+<li><a href="#install-git">Install Git</a></li>
+<li><a href="#create-a-new-repository">Create a new repository</a>
+<ul>
+<li><a href="#create-a-new-repository-in-an-empty-folder">Create a new repository in an empty folder</a></li>
+<li><a href="#create-a-new-repository-in-a-folder-that-already-contains-files">Create a new repository in a folder that already contains files</a></li>
+</ul>
+</li>
+<li><a href="#append-to-the-repository-history">Append to the repository history</a></li>
+<li><a href="#check-the-repository-status">Check the repository status</a></li>
+<li><a href="#push-a-repository-history-to-a-central-location">Push a repository history to a central location</a></li>
+<li><a href="#pull-a-repository-history-from-a-central-location">Pull a repository history from a central location</a></li>
+<li><a href="#create-a-branch">Create a branch</a></li>
+<li><a href="#merge-a-branch">Merge a branch</a></li>
+<li><a href="#handle-merge-conflicts">Handle merge conflicts</a></li>
+</ul>
+</li>
+</ul>
+
 # FAQ
 
 ## What is Git?
@@ -26,7 +66,7 @@ Finally, because Git literally only tracks _changes_ made to files (rather than 
 
 ### 2. Asynchronous collaboration
 
-Git makes it easy for multiple people to edit the files in a repository and then to sync up their updated repository histories. For example, Alice can add some commits (snapshots) to the copy of the repository that lives on her computer; Bob can add some different commits to the copy of the repository that lives on his computer; and then when they are ready to sync up their respective histories, Git figures out how to _merge_ their timelines correctly and to notify them of any [_conflicts_](#what-are-merge-conflicts) that occur during the merge.
+Git makes it easy for multiple people to edit the files in a repository and then to sync up their updated repository histories. For example, Alice can add some commits (snapshots) to the copy of the repository that lives on her computer; Bob can add some different commits to the copy of the repository that lives on his computer; and then when they are ready to sync up their respective histories, Git figures out how to _merge_ their timelines correctly and to notify them of any [_conflicts_](#handle-merge-conflicts) that occur during the merge.
 
 ## What is GitHub?
 
@@ -57,14 +97,6 @@ This is perhaps overly optimistic, but I think Git is for everyone! If you've ev
 ## What should I use Git for?
 
 Git is used extensively by software developers because it excels at tracking changes to text files. However, Git can be used to track changes to virtually any kind of file — though it's important to be aware that there are some caveats that come with tracking changes to very large non-text files (like videos). (See [Git Large File Storage](https://git-lfs.com/) for more info.) In short, if something is representable as a file on your computer, Git can probably track its history. Personally, I turn almost every project into a Git repository because it's just so damn useful!
-
-## What are merge conflicts?
-
-...
-
-# Installation
-
-Follow the instructions on [the Git downloads page](https://git-scm.com/downloads) to install either the command line tool or a GUI application.
 
 # Cheat sheet
 
@@ -234,6 +266,10 @@ git push --mirror origin
 
 To be honest, I've never used any of the GUI applications; so all of the instructions that follow will use the command line tool. However, the concepts described here should be available in GUI applications as well.
 
+## Install Git
+
+Follow the instructions on [the Git downloads page](https://git-scm.com/downloads) to install either the command line tool or a GUI application.
+
 ## Create a new repository
 
 Repositories are created using the `git init` command.
@@ -308,5 +344,21 @@ This usually shows:
 - what files are staged (i.e., added) to be included in the next commit (i.e., snapshot)
 
 ## Push a repository history to a central location
+
+...
+
+## Pull a repository history from a central location
+
+...
+
+## Create a branch
+
+...
+
+## Merge a branch
+
+...
+
+## Handle merge conflicts
 
 ...

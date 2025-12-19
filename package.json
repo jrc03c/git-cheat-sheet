@@ -1,0 +1,11 @@
+{
+	"devDependencies": {
+		"@jrc03c/fs-extras": "^0.0.30",
+		"@jrc03c/js-text-tools": "^0.0.105",
+		"@jrc03c/watch": "^0.0.24",
+		"eslint": "^9.39.2",
+		"liquidjs": "^10.24.0",
+		"markdown-it": "^14.1.0",
+		"prettier": "^3.7.4"
+	}
+}
