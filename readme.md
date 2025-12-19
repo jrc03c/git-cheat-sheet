@@ -2,46 +2,6 @@
 
 Welcome! This is a little tutorial and cheat sheet for using [Git](https://git-scm.com/).
 
-# Contents
-
-<ul>
-<li><a href="#intro">Intro</a></li>
-<li><a href="#contents">Contents</a></li>
-<li><a href="#faq">FAQ</a>
-<ul>
-<li><a href="#what-is-git">What is Git?</a></li>
-<li><a href="#what-problem-s-does-git-solve">What problem(s) does Git solve?</a>
-<ul>
-<li><a href="#1-file-version-histories">1. File version histories</a></li>
-<li><a href="#2-asynchronous-collaboration">2. Asynchronous collaboration</a></li>
-</ul>
-</li>
-<li><a href="#what-is-github">What is GitHub?</a></li>
-<li><a href="#who-should-use-git">Who should use Git?</a></li>
-<li><a href="#what-should-i-use-git-for">What should I use Git for?</a></li>
-</ul>
-</li>
-<li><a href="#cheat-sheet">Cheat sheet</a></li>
-<li><a href="#tutorial">Tutorial</a>
-<ul>
-<li><a href="#install-git">Install Git</a></li>
-<li><a href="#create-a-new-repository">Create a new repository</a>
-<ul>
-<li><a href="#create-a-new-repository-in-an-empty-folder">Create a new repository in an empty folder</a></li>
-<li><a href="#create-a-new-repository-in-a-folder-that-already-contains-files">Create a new repository in a folder that already contains files</a></li>
-</ul>
-</li>
-<li><a href="#append-to-the-repository-history">Append to the repository history</a></li>
-<li><a href="#check-the-repository-status">Check the repository status</a></li>
-<li><a href="#push-a-repository-history-to-a-central-location">Push a repository history to a central location</a></li>
-<li><a href="#pull-a-repository-history-from-a-central-location">Pull a repository history from a central location</a></li>
-<li><a href="#create-a-branch">Create a branch</a></li>
-<li><a href="#merge-a-branch">Merge a branch</a></li>
-<li><a href="#handle-merge-conflicts">Handle merge conflicts</a></li>
-</ul>
-</li>
-</ul>
-
 # FAQ
 
 ## What is Git?
@@ -362,3 +322,4 @@ This usually shows:
 ## Handle merge conflicts
 
 ...
+
